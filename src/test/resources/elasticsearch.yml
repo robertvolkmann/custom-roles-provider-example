@@ -5,6 +5,8 @@ shield.authc.realms.kerberos:
   order: 0
   acceptor_principal: HTTP/localhost@LOCALHOST
   files:
-    acceptor_keytab: kerberos/krb5.keytab
-    krb5_conf: kerberos/krb5.conf
+    acceptor_keytab: /etc/krb5.keytab
+    krb5_conf: /etc/krb5.conf
   rolesProvider: com.github.robertvolkmann.customrolesprovider.CustomRolesProvider
+
+security.manager.enabled: false
